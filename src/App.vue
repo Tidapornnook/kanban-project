@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Kanban :data="data"/>
+   <Kanban :data = "data"/>
   </div>
 </template>
 
@@ -11,24 +11,24 @@ import Kanban from "./components/Kanban"
 export default {
   name: 'App',
   components: {
-    Kanban
+   Kanban
   },
   data(){
-    return {
+    return{
       data:[
         {
           name:"todo",
-          color:"#F5B271",
+          colors:"#CBAB8D",
           tasks:[]
         },
-         {
+        {
           name:"doing",
-          color:"#BEA771",
+          colors:"#B9E3AE",
           tasks:[]
         },
-         {
+        {
           name:"done",
-          color:"#1B796F",
+          colors:"#D0B3E1",
           tasks:[]
         }
       ]
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style>
-  #app {
-  height: 100vh;
-  }
+#app {
+  height:100vh ;
+}
 </style>
